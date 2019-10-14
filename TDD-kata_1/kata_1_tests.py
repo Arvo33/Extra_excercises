@@ -33,5 +33,5 @@ class Tests(TestCase):
     def test_any_lenght_of_delimiters(self):
         self.assertEqual(6, add('//[***]\n1***2***3'))
 
-    # def test_multiple_delimiters_returns_six(self):
-    #     self.assertEqual(6, add('//[*][%]\n1*2%3'))
+    def test_multiple_delimiters_returns_six(self):
+        self.assertEqual(6, add('//[*][%]\n1*2%3'))
